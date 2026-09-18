@@ -1,0 +1,26 @@
+artifact_path: onnx_dt101
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+metadata:
+  owner: chris_royles
+  type: onnx
+mlflow_version: 2.22.1
+model_size_bytes: 2718
+model_uuid: be5331953e0d4b8d9fcd5df14ae81b14
+prompts: null
+run_id: iiqa-pzm4-rw9t-3ipc
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "string",
+    "name": "sex", "required": true}, {"type": "double", "name": "bmi", "required":
+    true}, {"type": "long", "name": "children", "required": true}, {"type": "string",
+    "name": "smoker", "required": true}, {"type": "string", "name": "region", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-10 15:11:28.113177'

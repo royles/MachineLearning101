@@ -1,0 +1,37 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 2.19.0
+model_size_bytes: 1533
+model_uuid: 451d6c40226d47d6a2e5af43d9a6128d
+run_id: q0lh-7z5k-f5y5-kdn0
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "double",
+    "name": "bmi", "required": true}, {"type": "long", "name": "children", "required":
+    true}, {"type": "boolean", "name": "sex_female", "required": true}, {"type": "boolean",
+    "name": "sex_male", "required": true}, {"type": "boolean", "name": "smoker_no",
+    "required": true}, {"type": "boolean", "name": "smoker_yes", "required": true},
+    {"type": "boolean", "name": "region_northeast", "required": true}, {"type": "boolean",
+    "name": "region_northwest", "required": true}, {"type": "boolean", "name": "region_southeast",
+    "required": true}, {"type": "boolean", "name": "region_southwest", "required":
+    true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+utc_time_created: '2025-06-02 14:23:14.796779'

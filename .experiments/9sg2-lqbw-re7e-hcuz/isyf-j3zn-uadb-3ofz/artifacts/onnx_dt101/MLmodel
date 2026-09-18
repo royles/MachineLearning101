@@ -1,0 +1,35 @@
+artifact_path: onnx_dt101
+flavors:
+  onnx:
+    code: null
+    data: model.onnx
+    onnx_session_options: null
+    onnx_version: 1.13.1
+    providers:
+    - CUDAExecutionProvider
+    - CPUExecutionProvider
+  python_function:
+    data: model.onnx
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.onnx
+    python_version: 3.11.9
+is_signature_from_type_hint: false
+metadata:
+  owner: chris_royles
+  type: onnx
+mlflow_version: 2.22.1
+model_size_bytes: 3748
+model_uuid: aeba5274da7a423b81810bf056f17911
+prompts: null
+run_id: isyf-j3zn-uadb-3ofz
+signature:
+  inputs: '[{"type": "integer", "required": true}, {"type": "string", "required":
+    true}, {"type": "float", "required": true}, {"type": "integer", "required": true},
+    {"type": "string", "required": true}, {"type": "string", "required": true}, {"type":
+    "float", "required": true}]'
+  outputs: '[{"type": "float", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-09-18 16:52:24.725736'

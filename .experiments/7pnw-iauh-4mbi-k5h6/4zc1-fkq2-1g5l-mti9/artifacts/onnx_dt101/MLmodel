@@ -1,0 +1,36 @@
+artifact_path: onnx_dt101
+flavors:
+  onnx:
+    code: null
+    data: model.onnx
+    onnx_session_options: null
+    onnx_version: 1.13.1
+    providers:
+    - CUDAExecutionProvider
+    - CPUExecutionProvider
+  python_function:
+    data: model.onnx
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.onnx
+    python_version: 3.11.9
+is_signature_from_type_hint: false
+metadata:
+  owner: chris_royles
+  type: onnx
+mlflow_version: 2.22.1
+model_size_bytes: 2540
+model_uuid: 93cbb38fded942be880667b30acc0f7f
+prompts: null
+run_id: 4zc1-fkq2-1g5l-mti9
+signature:
+  inputs: '[{"type": "double", "name": "age", "required": true}, {"type": "string",
+    "name": "sex", "required": true}, {"type": "double", "name": "bmi", "required":
+    true}, {"type": "double", "name": "children", "required": true}, {"type": "string",
+    "name": "smoker", "required": true}, {"type": "string", "name": "region", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-09-18 15:00:55.116312'

@@ -1,0 +1,32 @@
+artifact_path: ml_lr101
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 2.19.0
+model_size_bytes: 814
+model_uuid: 0f08694f4f9e4121826e8595da51ab29
+run_id: wi3t-g34v-rg30-vjcp
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "double",
+    "name": "bmi", "required": true}, {"type": "long", "name": "children", "required":
+    true}, {"type": "boolean", "name": "sex_female", "required": true}, {"type": "boolean",
+    "name": "sex_male", "required": true}, {"type": "boolean", "name": "smoker_no",
+    "required": true}, {"type": "boolean", "name": "smoker_yes", "required": true},
+    {"type": "boolean", "name": "region_northeast", "required": true}, {"type": "boolean",
+    "name": "region_northwest", "required": true}, {"type": "boolean", "name": "region_southeast",
+    "required": true}, {"type": "boolean", "name": "region_southwest", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2025-06-06 16:57:02.986502'

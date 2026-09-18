@@ -1,0 +1,34 @@
+artifact_path: ml_dtr101
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+metadata:
+  owner: chris_royles
+  type: decision tree
+mlflow_version: 2.22.1
+model_size_bytes: 7093
+model_uuid: f1f1f8f9aec74f1e979bb7eca6444c3e
+prompts: null
+run_id: 2mc2-quaq-8g2m-xa2k
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "string",
+    "name": "sex", "required": true}, {"type": "double", "name": "bmi", "required":
+    true}, {"type": "long", "name": "children", "required": true}, {"type": "string",
+    "name": "smoker", "required": true}, {"type": "string", "name": "region", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-10 12:25:59.448653'
